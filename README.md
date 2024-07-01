@@ -21,12 +21,6 @@ Para usar o OwnSupervision, siga estas etapas:
     Configure suas credenciais de OAuth no Reddit.
     Execute o bot em um ambiente compatível.
 
-Exemplo de Uso:
 
-Copie: 
-
-python own_supervision_bot.py
-
-Contribuições e Suporte:
 
 Contribuições são sempre bme vindas!
