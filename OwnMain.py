@@ -4,6 +4,8 @@ import time
 
 # Lista de URLs permitidas
 white_list = [
+#É possivel adicionar qualquer URL que vocẽ precisar, alguns exemplos: 
+    
     "https://www.pichau.com.br/",
     "https://www.kabum.com.br/",
     "https://www.mercadolivre.com.br/",
@@ -14,20 +16,21 @@ white_list = [
     "https://store.steampowered.com/",
     "https://www.magazineluiza.com.br/",
     "https://www.youtube.com/"
+
 ]
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
 reddit = praw.Reddit(
-    client_id='ViNUpkeiRAn_4t6vgS6Dpw',
-    client_secret='wLfqSclEib0Nmp2_ty-GdycbJWoVow',
-    username='The_Own_Supervision',
-    password='di60ztpud3',
-    user_agent='OwnSupervision'
+    client_id='',
+    client_secret='',
+    username='',
+    password='',
+    user_agent=''
 )
 
-subreddit = reddit.subreddit('computadores')
+subreddit = reddit.subreddit('')
 
 while True:
     try:
