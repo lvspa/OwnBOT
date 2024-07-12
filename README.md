@@ -23,4 +23,4 @@ Para usar o OwnSupervision, siga estas etapas:
 
 
 
-Contribuições são sempre bme vindas!
+Contribuições são sempre bem vindas!
