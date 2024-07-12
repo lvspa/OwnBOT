@@ -1,5 +1,7 @@
 # OwnSupervision
 
+![Header](./theown.png)
+
 O OwnSupervision é um bot moderador criado para auxiliar na gestão e na manutenção de comunidades no Reddit. Ele é projetado para automatizar tarefas de supervisão e garantir a conformidade com as diretrizes da comunidade.
 Funcionalidades Principais:
 
