@@ -28,11 +28,11 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger()
 
 reddit = praw.Reddit(
-    client_id='BhCAEy9WxJAFPO1GUzpZ9Q',
-    client_secret='7lTj-tPIzTRW5qmVE8TbGXnVxeS7Og',
-    username='The_Own_Supervision',
-    password='r?~39TUH9t!~6xC',
-    user_agent='OwnSupervision'
+    client_id='',
+    client_secret='',
+    username='',
+    password='',
+    user_agent=''
 )
 
 subreddit = reddit.subreddit('computadores')
