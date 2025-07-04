@@ -1,38 +1,24 @@
+from dotenv import load_dotenv
+load_dotenv()
+import os
 import praw
 import logging
 import time
 import re
 
-# Lista de URLs permitidas
-white_list = [
-    "https://www.pichau.com.br/",
-    "https://www.kabum.com.br/",
-    "https://www.aliexpress.com/",
-    "https://shopee.com.br/",
-    "https://www.casasbahia.com.br/",
-    "https://www.pontofrio.com.br/",
-    "https://store.steampowered.com/",
-    "https://www.magazineluiza.com.br/",
-    "https://www.youtube.com/",
-    "https://www.terabyteshop.com.br/",
-    "https://patoloco.com.br",
-    "https://www.americanas.com.br/",
-    "https://www.amazon.com.br/",
-    "https://www.nuuvem.com/br-pt/",
-    "https://meupc.net/",
-    "https://www.reddit.com/",
-    "https://www.microsoft.com/pt-br"
-]
+#Lista de URLs permitidas
+whitelist_env = os.getenv("WHITELIST")
+white_list = [url.strip() for url in whitelist_env.split(",")] if whitelist_env else []
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
 reddit = praw.Reddit(
-    client_id='',
-    client_secret='',
-    username='',
-    password='',
-    user_agent=''
+    client_id=os.getenv("REDDIT_CLIENT_ID"),
+    client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
+    username=os.getenv("REDDIT_USERNAME"),
+    password=os.getenv("REDDIT_PASSWORD"),
+    user_agent=os.getenv("REDDIT_USER_AGENT")
 )
 
 subreddit = reddit.subreddit('computadores')
